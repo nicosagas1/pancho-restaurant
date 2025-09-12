@@ -1,0 +1,159 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- Header -->
+<header class="header">
+    <div class="container">
+        <div class="logo">
+            <img src="https://ik.imagekit.io/nasxdmcdn2/panchoRestaurante/logo/pizzaPanchoRest?updatedAt=1757667384119" alt="Pancho Restaurant Logo" class="logo-image">
+        </div>
+    </div>
+</header>
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="hero-content">
+        <div class="hero-text">
+            <h2>Bienvenidos a Pancho Restaurant</h2>
+            <p>Las mejores prepizzas y pizzas de la zona</p>
+        </div>
+        <div class="hero-image">
+            <img src="https://ik.imagekit.io/nasxdmcdn2/panchoRestaurante/logo/restPanchoPrePizza.png?updatedAt=1755066319022" alt="Pizza Pancho Restaurant" loading="eager">
+        </div>
+    </div>
+</section>
+
+
+<!-- Products Section -->
+<section class="products">
+    <div class="container">
+        <h2 class="section-title">Nuestros Productos</h2>
+        <div class="products-grid">
+            <!-- Prepizza Grande -->
+            <div class="product-card">
+                <div class="product-image">
+                    <div class="image-placeholder">
+                        <div class="loading-spinner"></div>
+                    </div>
+                    <img src="https://ik.imagekit.io/nasxdmcdn2/panchoRestaurante/grande/grandePrePizza.png?updatedAt=1755065295741&w=400&h=250&fit=crop" alt="Prepizza Grande" loading="lazy" onload="this.style.opacity='1'; this.previousElementSibling.style.display='none';" onerror="this.style.display='none'; this.previousElementSibling.style.display='none';">
+                </div>
+                <div class="product-info">
+                    <h3>Prepizza Grande</h3>
+                    <p class="price">$3.500</p>
+                    <button class="order-btn" onclick="openWhatsApp('Prepizza Grande - $3.500')">
+                        <i class="fas fa-shopping-cart"></i>
+                        Pedir Ahora
+                    </button>
+                </div>
+            </div>
+
+            <!-- Prepizza Mediana -->
+            <div class="product-card">
+                <div class="product-image">
+                    <div class="image-placeholder">
+                        <div class="loading-spinner"></div>
+                    </div>
+                    <img src="https://ik.imagekit.io/nasxdmcdn2/panchoRestaurante/mediana/medianaPrePizza.png?updatedAt=1755065360578&w=400&h=250&fit=crop" alt="Prepizza Mediana" loading="lazy" onload="this.style.opacity='1'; this.previousElementSibling.style.display='none';" onerror="this.style.display='none'; this.previousElementSibling.style.display='none';">
+                </div>
+                <div class="product-info">
+                    <h3>Prepizza Mediana</h3>
+                    <p class="price">$2.800</p>
+                    <button class="order-btn" onclick="openWhatsApp('Prepizza Mediana - $2.800')">
+                        <i class="fas fa-shopping-cart"></i>
+                        Pedir Ahora
+                    </button>
+                </div>
+            </div>
+
+            <!-- Pizza de Todo Tipo -->
+            <div class="product-card">
+                <div class="product-image">
+                    <div class="image-placeholder">
+                        <div class="loading-spinner"></div>
+                    </div>
+                    <img src="https://ik.imagekit.io/nasxdmcdn2/panchoRestaurante/pizzaTodo/todoPizzatipos?updatedAt=1757675433935&w=400&h=250&fit=crop" alt="Pizza de Todo Tipo" loading="lazy" onload="this.style.opacity='1'; this.previousElementSibling.style.display='none';" onerror="this.style.display='none'; this.previousElementSibling.style.display='none';">
+                </div>
+                <div class="product-info">
+                    <h3>Pizza de Todo Tipo</h3>
+                    <p class="price">$4.500</p>
+                    <button class="order-btn" onclick="openWhatsApp('Pizza de Todo Tipo - $4.500')">
+                        <i class="fas fa-shopping-cart"></i>
+                        Pedir Ahora
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <!-- Footer Top Section -->
+        <div class="footer-top">
+            <!-- Footer Image -->
+            <div class="footer-image">
+                <div class="image-placeholder">
+                    <div class="loading-spinner"></div>
+                </div>
+                <img src="https://ik.imagekit.io/nasxdmcdn2/panchoRestaurante/logo/detalleFooter?updatedAt=1757668060949&w=200&h=100&fit=crop" alt="Detalle Footer" loading="lazy" onload="this.style.opacity='1'; this.previousElementSibling.style.display='none';" onerror="this.style.display='none'; this.previousElementSibling.style.display='none';">
+            </div>
+            
+            <!-- Footer Description -->
+            <div class="footer-description">
+                <p>Disfruta de las mejores prepizzas y pizzas artesanales, preparadas con ingredientes frescos y el amor que nos caracteriza.</p>
+            </div>
+        </div>
+
+        <!-- Footer Content -->
+        <div class="footer-content">
+            <!-- Horarios -->
+            <div class="footer-section">
+                <h3>Horarios de Atención</h3>
+                <ul>
+                    <li>Lunes a Viernes: 10:00 – 18:00</li>
+                    <li>Sábados: 10:00 – 17:00</li>
+                </ul>
+            </div>
+
+            <!-- Servicio -->
+            <div class="footer-section">
+                <h3>Servicio de Delivery</h3>
+                <p>🏡 A domicilio ubicado cerca de la estación de Lanús.</p>
+            </div>
+
+            <!-- Contacto -->
+            <div class="footer-section">
+                <h3>Contacto Directo</h3>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/fp.prepizzas/" target="_blank" class="instagram-link">
+                        <i class="fab fa-instagram"></i>
+                        Instagram
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="footer-bottom-content">
+                <div class="footer-item">
+                    <p>© 2025 Pancho Restaurant. Todos los derechos reservados.</p>
+                </div>
+                <div class="footer-item">
+                    <p>Realizado por <a href="https://www.instagram.com/nasc_dev/" target="_blank" class="instagram-dev-link">@nasc_dev</a></p>
+                </div>
+                <div class="footer-item">
+                    <a href="https://mipropiapaginaweb.onrender.com/" target="_blank" class="website-link">Mi página web 💻</a>
+                </div>
+                <div class="footer-item">
+                    <a href="https://wa.me/5491146737100?text=Hola%20me%20llamo%20________,%20me%20gusta%20tu%20pagina%20web%20y%20estoy%20interesado%20en%20tus%20servicios,%20por%20favor%20contactame." target="_blank" class="dev-whatsapp">
+                        <i class="fab fa-whatsapp"></i>
+                        WhatsApp Dev
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+{% endblock %}
