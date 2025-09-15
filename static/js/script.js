@@ -231,47 +231,6 @@ function addParticleEffect() {
     }
 }
 
-// Función para agregar efecto de cursor personalizado
-function addCustomCursor() {
-    const cursor = document.createElement('div');
-    cursor.className = 'custom-cursor';
-    cursor.style.cssText = `
-        position: fixed;
-        width: 20px;
-        height: 20px;
-        background: rgba(255, 107, 53, 0.8);
-        border-radius: 50%;
-        pointer-events: none;
-        z-index: 9999;
-        transition: transform 0.1s ease;
-        display: none;
-    `;
-    document.body.appendChild(cursor);
-    
-    document.addEventListener('mousemove', (e) => {
-        cursor.style.left = e.clientX - 10 + 'px';
-        cursor.style.top = e.clientY - 10 + 'px';
-        cursor.style.display = 'block';
-    });
-    
-    document.addEventListener('mouseleave', () => {
-        cursor.style.display = 'none';
-    });
-    
-    // Efecto especial en hover de botones
-    const interactiveElements = document.querySelectorAll('button, a, .product-card');
-    interactiveElements.forEach(el => {
-        el.addEventListener('mouseenter', () => {
-            cursor.style.transform = 'scale(1.5)';
-            cursor.style.background = 'rgba(255, 107, 53, 1)';
-        });
-        
-        el.addEventListener('mouseleave', () => {
-            cursor.style.transform = 'scale(1)';
-            cursor.style.background = 'rgba(255, 107, 53, 0.8)';
-        });
-    });
-}
 
 // Función para agregar notificaciones toast
 function showToast(message, type = 'success') {
@@ -345,7 +304,6 @@ function init() {
     preloadProductImages();
     preloadFooterImage();
     addParticleEffect();
-    addCustomCursor();
     addLoadingEffect();
     
     // Agregar evento de scroll para el header
